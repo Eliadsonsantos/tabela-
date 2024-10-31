@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela alunos aprovados e reprovados</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
    <header>
-    <p>Vacilos</p>
    </header>
 
-   <div>Boletim de Notas </div>
+   <h1>Boletim de Notas</h1>
        <h1>alunos</h1>
        <hr>
 
 
        <table>
+        <thead>
+            <tr>
                 <th>Nome</th>
                 <th>1°trimestre </th>
                 <th>2°trimestre</th>
@@ -26,7 +28,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr class="aprovado">
                 <td>Eliadson</td>
                 <td>10.00</td>
                 <td>10.00</td>
@@ -35,9 +37,25 @@
                 <td>100%</td>
                 <td>aprovado</td>
             </tr>
-        </tbody>
-        <tfoot>
-           <tr>
-    </table>
-</body>
+        
+        <tr class="aprovado">
+            <td>Pietro</td>
+            <td>6.00</td>
+            <td>7.00</td>
+            <td>9.00</td>
+            <td>6.00</td>
+            <td>80%</td>
+            <td>aprovado</td>
+        </tr>
+    <tr class="reprovado">
+        <td>Rafael</td>
+        <td>4.00</td>
+        <td>6.00</td>
+        <td>8.00</td>
+        <td>5.00</td>
+        <td>50%</td>
+        <td>reprovado</td>
+    </tr>
+</tbody>
+</table>
 </html>
